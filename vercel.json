@@ -1,7 +1,8 @@
 {
-  "functions": {
-    "updateTwitchStatus": {
-      "schedule": "cron(*/10 * * * *)"
+  "crons": [
+    {
+      "path": "/api/updateTwitchStatus",
+      "schedule": "*/10 * * * *"
     }
-  }
+  ]
 }
