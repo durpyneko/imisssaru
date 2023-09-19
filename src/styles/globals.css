@@ -1,0 +1,21 @@
+:root {
+  --saru-dark-blue: #2a253a;
+  --saru-blurple: #453d60;
+}
+
+body {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--saru-dark-blue);
+  background-image: url("/assets/Saruei_by_Kevin_lim.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 500px) {
+  body {
+    background-image: url("/assets/Saruei_by_サカモトミツキ.jpg");
+  }
+}
