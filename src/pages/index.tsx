@@ -1,5 +1,5 @@
 // Imports
-import { Box, Center } from "@chakra-ui/react";
+import { Box, Center, Link } from "@chakra-ui/react";
 
 // Components
 import TabHeader from "../components/TabHeader";
@@ -40,7 +40,7 @@ const IndexPage = () => {
         </Box>
       </Center>
       <Center>
-        <Box className="Footer" position="absolute" bottom="10px" width="99vw">
+        <Box className="Footer" position="absolute" bottom="10px">
           <Box
             borderRadius="8px"
             backgroundColor="var(--saru-blurple)"
@@ -52,7 +52,15 @@ const IndexPage = () => {
             alignItems="center"
             textAlign="center"
           >
-            TEST AAA WAH
+            <Link
+              href="https://www.twitch.tv/saruei"
+              target="_blank"
+              rel="noopener noreferrer"
+              color="inherit"
+              _hover={{ color: "inherit", textDecoration: "underline" }}
+            >
+              https://www.twitch.tv/saruei
+            </Link>
           </Box>
         </Box>
       </Center>
