@@ -1,8 +1,0 @@
-{
-  "crons": [
-    {
-      "path": "/api/updateTwitchStatus",
-      "schedule": "*/10 * * * *"
-    }
-  ]
-}
