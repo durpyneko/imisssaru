@@ -9,7 +9,7 @@ export default function TabHeader({ title }: TabHeaderProps) {
   return (
     <Helmet>
       <title>{title}</title>
-      <link rel="icon" type="image/png" href="sarueiBlush.webp" />
+      <link rel="icon" type="image/png" href="imagesets/sarueiBlush.webp" />
     </Helmet>
   );
 }

@@ -14,8 +14,45 @@ body {
   padding: 0;
 }
 
-@media (max-width: 500px) {
+.imageSource1 {
+  display: block;
+}
+
+.imageSource2 {
+  display: none;
+}
+
+@media (max-width: 600px) {
   body {
-    background-image: url("/assets/Saruei_by_サカモトミツキ.jpg");
+    background-image: url("/assets/Saruei_by_sakamoto0214.jpg");
+    background-size: 130%;
+  }
+
+  .imageSource1 {
+    display: none;
+  }
+
+  .imageSource2 {
+    display: block;
+  }
+
+  .imageSourceBox {
+    display: "flex";
+    justify-content: "center";
+    align-self: "center";
+    text-align: "center";
+  }
+
+  .TopBoxes {
+    width: 300px !important;
+  }
+
+}
+
+@media (max-width: 1170px) {
+  .imageSourceBox {
+    position: absolute;
+    bottom: 90px !important;
+    width: fit-content;
   }
 }

@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "updateTwitchStatus": {
+      "schedule": "cron(*/10 * * * *)"
+    }
+  }
+}
