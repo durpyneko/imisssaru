@@ -1,2 +1,2 @@
 # imisssaru
-imisssaru imspired by [imissfauna](https://imissfauna.com/)
+imisssaru inspired by [imissfauna](https://imissfauna.com/)
