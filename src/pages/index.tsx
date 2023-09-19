@@ -7,7 +7,6 @@ import axios from "axios";
 import TabHeader from "../components/TabHeader";
 
 const IndexPage = () => {
-  const [source, setSource] = useState("Loading...");
   const [twitchStatus, setTwitchStatus] = useState("Loading...");
 
   useEffect(() => {

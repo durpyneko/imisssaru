@@ -12,6 +12,7 @@ body {
   background-size: cover;
   margin: 0;
   padding: 0;
+  transition: background-image 1.0s ease-in-out;
 }
 
 .imageSource1 {
@@ -25,6 +26,7 @@ body {
 @media (max-width: 600px) {
   body {
     background-image: url("/assets/Saruei_by_sakamoto0214.jpg");
+    transition: background-image 1.0s ease-in-out;
     background-size: 130%;
   }
 
@@ -37,10 +39,10 @@ body {
   }
 
   .imageSourceBox {
-    display: "flex";
-    justify-content: "center";
-    align-self: "center";
-    text-align: "center";
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
   }
 
   .TopBoxes {
