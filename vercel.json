@@ -1,12 +1,5 @@
 {
-  "crons": [
-    {
-      "path": "/api/updateTwitchStatus",
-      "schedule": "5 19 * * *"
-    },
-    {
-      "path": "/api/updateTwitchStatus",
-      "schedule": "0 2 * * *"
-    }
-  ]
+  "version": 2,
+  "builds": [{ "src": "api/twitch-monitor.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/api/twitch-monitor", "dest": "api/twitch-monitor.js" }]
 }

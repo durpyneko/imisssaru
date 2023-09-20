@@ -10,18 +10,40 @@ const IndexPage = () => {
   const [twitchStatus, setTwitchStatus] = useState("Loading...");
 
   useEffect(() => {
-    async function fetchTwitchStatus() {
-      try {
-        const response = await axios.get("/api/updateTwitchStatus");
+    const socket = new WebSocket(
+      "wss://imisssaru.vercel.app/api/twitch-monitor"
+    );
 
-        setTwitchStatus(response.data);
-      } catch (error) {
-        console.error("Error fetching Twitch status:", error);
-        setTwitchStatus("Error");
+    socket.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+
+      // Handle the WebSocket event data here
+      switch (data.event) {
+        case "connect":
+          console.log("Connected!", data.data);
+          if (data.data.streaming === "false") {
+            setTwitchStatus("SARUEI IS OFFLINE SOB");
+          }
+          break;
+        case "stream-up":
+          console.log("Stream Is Up!", data.data);
+          setTwitchStatus("SARUEI IS ONLINE SOB");
+          break;
+        case "stream-down":
+          console.log("Stream Is Down!", data.data);
+          setTwitchStatus("SARUEI IS OFFLINE SOB");
+          break;
+        case "viewcount":
+          console.log("Viewer Update!", data.data);
+          break;
+        default:
+          break;
       }
-    }
+    };
 
-    fetchTwitchStatus();
+    socket.onclose = (event) => {
+      console.log("WebSocket closed:", event);
+    };
   }, []);
   return (
     <>
