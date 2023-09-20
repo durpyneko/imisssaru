@@ -2,7 +2,11 @@
   "crons": [
     {
       "path": "/api/updateTwitchStatus",
-      "schedule": "*/10 * * * *"
+      "schedule": "5 19 * * *"
+    },
+    {
+      "path": "/api/updateTwitchStatus",
+      "schedule": "0 2 * * *"
     }
   ]
 }
