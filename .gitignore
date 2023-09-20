@@ -1,6 +1,9 @@
 # vscode settings
 .vscode
 
+# test stuffs
+test.js
+
 # Logs
 logs
 *.log
