@@ -25,6 +25,12 @@ const IndexPage = () => {
   }, []);
   return (
     <>
+      <meta property="og:type" content="website"></meta>
+      <meta property="og:title" content="I MISS SARUEI"></meta>
+      <meta property="og:description" content="my face when"></meta>
+      <meta property="og:image" content="/imagesets/sarueiCry.webp"></meta>
+      <meta property="og:url" content="https://imisssaru.vercel.app"></meta>
+
       <TabHeader title={"I MISS SARUEI"} />
       <Center>
         <Box
