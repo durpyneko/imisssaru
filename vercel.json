@@ -1,5 +1,0 @@
-{
-  "version": 2,
-  "builds": [{ "src": "api/twitch-monitor.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/api/twitch-monitor", "dest": "api/twitch-monitor.js" }]
-}
