@@ -114,13 +114,13 @@ const IndexPage = () => {
               <Text fontSize={10}>
                 Check this project out at{" "}
                 <Link
-                  href="https://github.com/iDurpyDude12/imisssaru/"
+                  href="https://github.com/durpyneko/imisssaru/"
                   target="_blank"
                   rel="noopener noreferrer"
                   color="inherit"
                   _hover={{ color: "inherit", textDecoration: "underline" }}
                 >
-                  https://github.com/iDurpyDude12/imisssaru/
+                  https://github.com/durpyneko/imisssaru/
                 </Link>
               </Text>
             </Box>
